@@ -1,0 +1,125 @@
+*{
+    background-color: white;
+    box-sizing: border-box;
+    
+}
+.container-fluid{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+.box-main{
+    height: 400px;
+    width: 100%;
+    background-color: yellowgreen;
+
+}
+.small-container{
+    display: flex;
+    flex-direction: row;
+}
+.small-container-row-3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  
+}
+.image{
+    height: 400px;
+}
+
+@media screen and (max-width:680px){
+   .box-main{
+    background-color: black;
+   }
+   .small-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   .box{
+    width: 100%;
+   }
+   .small-container-row-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    }
+}
+@media screen and (max-width:300px){
+    .box-main{
+        background-color: black;
+        height: 200px;
+        border-radius: 8px;
+    }
+    .small-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box{
+        width: 100%;
+        height: 200px;
+    }
+
+}
+
+.heading{
+    color:red;
+    font-weight: bold;
+    font-family: 'roboto';
+    font-size: 24px;
+}
+.description{
+    color:black;
+    font-family: 'caveat';
+}
+.text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image-text-container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.row-3-text{
+    height: 400px;
+    width: 50%;
+    margin-left: 20px;
+}
+.row-3-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.row-4-image{
+    order: 4;
+}
+@media screen and (max-width:680px){
+    .row-4-image{
+        order: 0;
+    }
+    .row-3-text{
+        height: 400px;
+        width: 100%;
+        margin-left: 10px;
+    }
+    .image-text-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .row-3-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 200px;
+        overflow-y: hidden;
+    }
+}
